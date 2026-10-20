@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Путеводитель наставника</title>
+<style>
+:root {
+  --paper: #f5ecd7;
+  --green: #276749;
+  --orange: #c45b35;
+  --blue: #244b68;
+  --ink: #28352d;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+header {
+  text-align: center;
+  padding: 35px 18px 25px;
+  background: #fffaf0;
+  border-bottom: 3px solid #d8c9a8;
+}
+.eyebrow {
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 10px 0;
+  color: var(--green);
+  font-size: clamp(30px, 7vw, 48px);
+  line-height: 1.1;
+}
+.motto {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 18px;
+}
+.intro {
+  max-width: 600px;
+  margin: 15px auto;
+}
+.button {
+  display: inline-block;
+  margin: 8px 4px;
+  padding: 12px 18px;
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.button.secondary {
+  background: transparent;
+  color: var(--green);
+  border: 2px solid var(--green);
+}
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 14px 35px;
+}
+h2 { color: var(--blue); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 14px;
+}
+.card {
+  padding: 19px;
+  background: #fffaf0;
+  border: 1px solid #d8c9a8;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #e3eddf;
+  color: var(--green);
+  font-weight: bold;
+}
+h3 {
+  color: var(--green);
+  margin: 12px 0 6px;
+}
+.card p { margin: 0 0 15px; }
+.card a {
+  margin-top: auto;
+  color: var(--orange);
+  font-weight: bold;
+  text-decoration: none;
+}
+.card a:hover { text-decoration: underline; }
+.note {
+  margin-top: 22px;
+  padding: 15px;
+  background: #fff7e8;
+  border-left: 5px solid var(--orange);
+  border-radius: 8px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #68756a;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Путеводитель для наставников</div>
+  <h1>ПУТЕВОДИТЕЛЬ<br>НАСТАВНИКА</h1>
+  <div class="motto">ТЫ ВЕДЁШЬ — ОНИ РАСТУТ</div>
+  <p class="intro">
+    Твой маршрут наставника: знакомься с ребятами,
+    создавай команду, находи решения и отмечай свой рост.
+  </p>
+  <a class="button" href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf" target="_blank">
+    Открыть полный путеводитель
+  </a>
+  <a class="button secondary" href="#sections">Выбрать раздел</a>
+</header>
+
+<main>
+  <h2 id="sections">Твой маршрут</h2>
+  <p>Выбери нужный раздел. Он откроется в PDF-путеводителе.</p>
+
+  <div class="grid">
+
+    <article class="card">
+      <span class="number">01</span>
+      <h3>Моя карта пути</h3>
+      <p>Начни свой маршрут наставника.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=1" target="_blank">Открыть страницу →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">02</span>
+      <h3>Моя самопрезентация</h3>
+      <p>Расскажи о себе и своей роли.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=2" target="_blank">Открыть страницу →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">03</span>
+      <h3>Мой класс. Знаю каждого по имени</h3>
+      <p>Знакомство с ребятами и наблюдения о классе.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=3" target="_blank">Открыть раздел →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">04</span>
+      <h3>Карта дружбы</h3>
+      <p>Посмотри на связи и отношения в команде.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=8" target="_blank">Открыть страницу →</a>
+    </article>
+<span class="number">05</span>
+      <h3>Здесь рождаются решения</h3>
+      <p>Идеи, обсуждения и совместные решения.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=9" target="_blank">Открыть страницу →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">06</span>
+      <h3>12 качеств Луганского характера</h3>
+      <p>Исследуй качества, которые помогают идти вперёд.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=10" target="_blank">Открыть раздел →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">07</span>
+      <h3>Герои рядом. Их качества — в тебе</h3>
+      <p>Вдохновляйся примерами и находи сильные стороны в себе.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=12" target="_blank">Открыть страницу →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">08</span>
+      <h3>Моя карта роста за год</h3>
+      <p>Подведи личные итоги и отметь свой прогресс.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=96" target="_blank">Открыть раздел →</a>
+    </article>
+
+    <article class="card">
+      <span class="number">09</span>
+      <h3>Итоговые сборы наставников</h3>
+      <p>Заверши маршрут и собери результаты года.</p>
+      <a href="ПУТЕВОДИТЕЛЬ_НАСТАВНИКА_2026.pdf#page=98" target="_blank">Открыть страницу →</a>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Обрати внимание:</strong> сейчас разделы открывают соответствующие
+    страницы PDF. Ссылки на папки Яндекс Диска добавим отдельно, когда будем
+    подключать материалы к нужным разделам.
+  </div>
+</main>
+
+<footer>
+  Путеводитель наставника · Твой путь начинается здесь
+</footer>
+
+</body>
+</html>
+    <article class="card">
+      
